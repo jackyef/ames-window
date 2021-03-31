@@ -66,7 +66,7 @@ export default function Home() {
                   continuously!
                   <br />
                   <br />
-                  If you can't see it as rotating in one direction, let's try
+                  If you can't see it as rotating in one direction, we can try
                   adding a ball to it and see if it helps you.
                 </p>
                 <button
@@ -103,7 +103,7 @@ export default function Home() {
             {step === 5 && (
               <>
                 <p>
-                  This illusion work best when the lighting condition is
+                  This illusion works best when the lighting condition is
                   consistent even when the object is rotated.
                   <br />
                   <br />
