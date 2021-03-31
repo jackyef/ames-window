@@ -6,6 +6,7 @@ import { YouTubeEmbed } from '../components/YouTubeEmbed/YouTubeEmbed';
 import { TwitterShare } from '../components/TwitterShare/TwitterShare';
 import { publicUrl } from '../components/MetaTags/AppMetaTags';
 import { useRouter } from 'next/router';
+import { ExternalLink } from '../components/ExternalLink/ExternalLink';
 
 export default function About() {
   const router = useRouter();
@@ -32,6 +33,19 @@ export default function About() {
               was for me!
             </p>
             <p>
+              Build with{' '}
+              <ExternalLink href="https://nextjs.org/">Next.js</ExternalLink> +{' '}
+              <ExternalLink href="https://threejs.org/">three.js</ExternalLink>{' '}
+              +{' '}
+              <ExternalLink href="https://github.com/pmndrs/react-three-fiber">
+                react-three-fiber
+              </ExternalLink>{' '}
+              ⚡ by{' '}
+              <ExternalLink href="https://twitter.com/jackyef__">
+                @jackyef__
+              </ExternalLink>
+            </p>
+            <p>
               <TwitterShare
                 text={`Ames Window Illusion: Can you see it? ${publicUrl}`}
               >
@@ -39,7 +53,10 @@ export default function About() {
               </TwitterShare>
             </p>
 
-            <p>Inspired by this Veritasium&apos;s video:</p>
+            <p>
+              If you are looking to explanation for this illusion, check this
+              Veritasium&apos;s video:
+            </p>
             <YouTubeEmbed videoId="dBap_Lp-0oc" />
 
             <div className="backContainer">
@@ -79,6 +96,7 @@ export default function About() {
           transition: background 0.2s ease-in;
           display: inline-block;
           text-decoration: none;
+          font-size: 0.833rem;
         }
 
         .backContainer {

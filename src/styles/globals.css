@@ -11,6 +11,7 @@ button {
 
 a {
   color: lightsteelblue;
+  font-size: inherit;
 }
 
 * {

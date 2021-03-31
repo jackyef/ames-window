@@ -12,7 +12,8 @@ export function AmesWindow({
 
   // Rotate the group every frame, this is outside of React without overhead
   useFrame(() => {
-    if (shouldRotate) {
+    if (shouldRotate && group.current) {
+      // @ts-expect-error
       group.current.rotation.y += 0.02;
     }
   });

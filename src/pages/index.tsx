@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { Canvas } from '@react-three/fiber';
 import styles from '../styles/Home.module.css';
 import { AmesWindow } from '../components/AmesWindow';
@@ -112,9 +113,9 @@ export default function Home() {
                   <br />
                   <br />
                   <em>
-                    (I personally find that turning spotlight on while turning off
-                    the other lights helps a lot! You might want to give that a
-                    try)
+                    (I personally find that turning spotlight on while turning
+                    off the other lights helps a lot! You might want to give
+                    that a try)
                   </em>
                 </p>
                 <div className="buttonContainer">
@@ -207,7 +208,13 @@ export default function Home() {
                 </div>
               </>
             )}
-            <button onClick={handleNext}>Next &rarr;</button>
+            {step < 6 ? (
+              <button onClick={handleNext}>Next &rarr;</button>
+            ) : (
+              <Link href="/about">
+                <a>Next &rarr;</a>
+              </Link>
+            )}
           </div>
         </main>
       </div>
@@ -228,7 +235,8 @@ export default function Home() {
           font-size: 1.1rem;
         }
 
-        button {
+        button,
+        a {
           border: none;
           border-radius: 4px;
           color: white;
@@ -239,6 +247,11 @@ export default function Home() {
           text-transform: uppercase;
           align-self: flex-end;
           transition: background 0.2s ease-in;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 0.833rem;
         }
 
         .buttonAction {
