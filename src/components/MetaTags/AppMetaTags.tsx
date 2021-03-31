@@ -4,7 +4,7 @@ import Head from 'next/head';
 export const publicUrl = 'https://ames-window.vercel.app';
 
 export const defaultTitle = 'Ames Window illusion: Can you see it? ';
-const defaultDescription = `Small web-app showing the Ames Window illusion with @react-three/fiber. Written for learning.`;
+const defaultDescription = `Small web-app showing the Ames Window illusion with @react-three/fiber. Created for learning.`;
 const defaultOgImage = 'https://ames-window.vercel.app/og.png';
 
 interface Props {

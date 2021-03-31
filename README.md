@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![cover-picture](./public/og.png)
 
-## Getting Started
+## Ames Window illusion: Can you see it?
 
-First, run the development server:
+Small web-app showing the Ames Window illusion with `@react-three/fiber`. 
+Written for learning.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Access it on https://ames-window.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Credits
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Tools used:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- [Next.js](https://nextjs.org/)
+- [three.js](https://threejs.org/)
+- [react-three-fiber](https://github.com/pmndrs/react-three-fiber)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+For explanation about the illusion, check out this Veritasium's video:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![The Illusion Only Some People Can See](http://img.youtube.com/vi/dBap_Lp-0oc/0.jpg)](http://www.youtube.com/watch?v=dBap_Lp-0oc "The Illusion Only Some People Can See")
