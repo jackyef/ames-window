@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Canvas } from '@react-three/fiber';
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { AmesWindow } from '../components/AmesWindow';
 
@@ -12,7 +11,7 @@ export default function Home() {
   const [shouldRotate, setShouldRotate] = useState(true);
   const [withBall, setWithBall] = useState(false);
   const [withRuler, setWithRuler] = useState(false);
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
   const router = useRouter();
 
   const handleNext = () => {
@@ -48,17 +47,6 @@ export default function Home() {
           </Canvas>
 
           <div className="dialogContainer">
-            {step === 0 && (
-              <p>
-                This is Ames Window. An illusion that can only be seen by some
-                people.
-                <br />
-                <br />
-                What do you see here? Do you see the window oscillating
-                (rotating back and forth), or do you see it rotating
-                consistently in one direction?
-              </p>
-            )}
             {step === 1 && (
               <p>
                 This is Ames Window. An illusion that can only be seen by some

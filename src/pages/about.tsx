@@ -78,6 +78,7 @@ export default function About() {
           text-transform: uppercase;
           transition: background 0.2s ease-in;
           display: inline-block;
+          text-decoration: none;
         }
 
         .backContainer {
