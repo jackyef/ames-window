@@ -33,7 +33,7 @@ export default function About() {
             </p>
             <p>
               <TwitterShare
-                text={`Ames Window Illusion: Can you see it? ${publicUrl}${router.pathname}`}
+                text={`Ames Window Illusion: Can you see it? ${publicUrl}`}
               >
                 Share on Twitter
               </TwitterShare>
