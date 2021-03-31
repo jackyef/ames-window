@@ -109,6 +109,13 @@ export default function Home() {
                   <br />
                   Here you can play around with the lightings a little bit. See
                   if it helps you see through the illusion!
+                  <br />
+                  <br />
+                  <em>
+                    (I personally find that turning spotlight on while turning off
+                    the other lights helps a lot! You might want to give that a
+                    try)
+                  </em>
                 </p>
                 <div className="buttonContainer">
                   <button
