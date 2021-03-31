@@ -83,6 +83,7 @@ export default function About() {
 
         .backContainer {
           margin-top: 16px;
+          font-size: 0.875rem;
         }
       `}</style>
     </>
