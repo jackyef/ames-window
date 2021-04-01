@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { Canvas } from '@react-three/fiber';
 import styles from '../styles/Home.module.css';
@@ -13,14 +12,16 @@ export default function Home() {
   const [withBall, setWithBall] = useState(false);
   const [withRuler, setWithRuler] = useState(false);
   const [step, setStep] = useState(1);
-  const router = useRouter();
 
   const handleNext = () => {
-    if (step < 6) {
-      setStep((prev) => prev + 1);
-    } else {
-      router.push('/about');
+    if (step === 2) {
+      setWithBall(false)
     }
+    if (step === 4) {
+      setWithRuler(false)
+    }
+
+    setStep((prev) => prev + 1);
   };
 
   return (
@@ -81,8 +82,7 @@ export default function Home() {
             {step === 3 && (
               <>
                 <p>
-                  Hopefully you can see it better now! Next, let's try adding a
-                  ruler in between the window.
+                  Next, let's try adding a ruler in between the window.
                 </p>
                 <button
                   className="buttonAction"
