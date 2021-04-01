@@ -150,7 +150,7 @@ export default function Home() {
             {step === 6 && (
               <>
                 <p>
-                  Here all all the things you can toggle in this simulation.
+                  Here are all the things you can toggle in this simulation.
                   Feel free to play with it all you like.
                   <br />
                   <br />
