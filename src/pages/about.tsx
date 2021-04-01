@@ -46,6 +46,9 @@ export default function About() {
               </ExternalLink>
             </p>
             <p>
+              <ExternalLink href="https://github.com/jackyef/ames-window">Code are on GitHub</ExternalLink>
+            </p>
+            <p>
               <TwitterShare
                 text={`Ames Window Illusion: Can you see it? ${publicUrl}`}
               >
@@ -78,7 +81,6 @@ export default function About() {
         .dialogContainer {
           display: flex;
           flex-direction: column;
-          padding: 16px;
           max-width: 600px;
           line-height: 1.4;
           font-size: 1.1rem;

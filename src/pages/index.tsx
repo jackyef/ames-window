@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <div className={styles.container}>
         <main className={styles.main}>
-          <h1 className={styles.title}>Ames Window Illusion</h1>
+          <h1 className={styles.title}>Ames Window illusion</h1>
 
           <Canvas className="canvas" orthographic>
             {withAmbientLight && <ambientLight />}
@@ -229,8 +229,8 @@ export default function Home() {
         .dialogContainer {
           display: flex;
           flex-direction: column;
-          padding: 16px;
           max-width: 600px;
+          width: 100%;
           line-height: 1.4;
           font-size: 1.1rem;
         }
@@ -269,6 +269,7 @@ export default function Home() {
         .buttonContainer {
           display: flex;
           gap: 8px;
+          flex-wrap: wrap;
         }
 
         .buttonContainer > button {
