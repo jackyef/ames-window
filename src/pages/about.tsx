@@ -33,7 +33,7 @@ export default function About() {
               was for me!
             </p>
             <p>
-              Build with{' '}
+              Built with{' '}
               <ExternalLink href="https://nextjs.org/">Next.js</ExternalLink> +{' '}
               <ExternalLink href="https://threejs.org/">three.js</ExternalLink>{' '}
               +{' '}
